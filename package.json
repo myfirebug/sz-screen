@@ -1,0 +1,70 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.2",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.8.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "set PORT=6001 && cross-env REACT_APP_ENV=development react-app-rewired start",
+    "build:test": "cross-env REACT_APP_ENV=test react-app-rewired build",
+    "build:production": "cross-env REACT_APP_ENV=production react-app-rewired build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/react-redux": "^7.1.23",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/redux-logger": "^3.0.9",
+    "@types/redux-thunk": "^2.1.0",
+    "antd": "^4.19.3",
+    "axios": "^0.26.1",
+    "cross-env": "^7.0.3",
+    "customize-cra": "^1.0.0",
+    "echarts": "^5.3.2",
+    "echarts-wordcloud": "^2.0.0",
+    "node-sass": "^7.0.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "react-app-rewired": "^2.2.1",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^5.3.0",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "sass-loader": "^12.6.0",
+    "sass-resources-loader": "^2.2.4",
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "webpack-bundle-analyzer": "^4.5.0"
+  },
+  "homepage": "."
+}

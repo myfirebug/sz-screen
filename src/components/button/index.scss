@@ -1,0 +1,17 @@
+@include b(button) {
+  height: 24px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: all 0.25s ease 0s;
+  @include e(default) {
+    padding: 0 14px;
+    line-height: 22px;
+    color: #04c0ff;
+    background: rgba(4, 192, 255, 0.1);
+    border: 1px solid #04c0ff;
+    &:hover {
+      background-color: #04c0ff;
+      color: #fff;
+    }
+  }
+}

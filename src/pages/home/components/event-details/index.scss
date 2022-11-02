@@ -1,0 +1,17 @@
+@include b(evnet-details) {
+  .app-box__body {
+    padding: 0 17px;
+  }
+  .ant-col {
+    padding-top: 15px;
+    display: flex;
+    line-height: 21px;
+  }
+  .name {
+    width: 66px;
+    color: #bacedd;
+  }
+  .value {
+    flex: 1;
+  }
+}

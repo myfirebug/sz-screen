@@ -1,0 +1,31 @@
+@include b(contingency-plan) {
+  margin-top: 16px;
+  height: 420px;
+  .app-box__body {
+    padding: 0 16px;
+    .title {
+      margin-top: 12px;
+      padding-bottom: 10px;
+      font-weight: bold;
+    }
+    .app-button {
+      margin-right: 10px;
+    }
+    .content {
+      padding: 10px;
+      height: 86px;
+      line-height: 24px;
+      background: rgba(43, 65, 139, 0.45);
+    }
+    .address {
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        margin: 0 10px 10px 0;
+        padding: 9px 16px;
+        line-height: 1;
+        background: rgba(43, 65, 139, 0.45);
+      }
+    }
+  }
+}
