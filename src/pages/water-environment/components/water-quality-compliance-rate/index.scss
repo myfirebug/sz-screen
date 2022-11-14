@@ -1,0 +1,46 @@
+@include b(waterQualityComplianceRate) {
+  height: 282px;
+  margin-top: 14px;
+  .item {
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    .name {
+      width: 60px;
+      overflow: hidden;
+    }
+    .value {
+      width: 40px;
+      text-align: right;
+    }
+    .progress {
+      flex: 1;
+      height: 10px;
+      border-radius: 10px;
+      background: rgba(74, 187, 255, 0.1);
+    }
+    .bar {
+      height: 10px;
+      border-radius: 10px;
+      background: #4abbff;
+    }
+    .sort {
+      width: 22px;
+      height: 22px;
+      margin-right: 14px;
+      background: #4a8cff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      &-0 {
+        background: url("../../../../assets/images/ranking-0.png") no-repeat;
+      }
+      &-1 {
+        background: url("../../../../assets/images/ranking-1.png") no-repeat;
+      }
+      &-2 {
+        background: url("../../../../assets/images/ranking-2.png") no-repeat;
+      }
+    }
+  }
+}

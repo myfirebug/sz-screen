@@ -1,0 +1,39 @@
+@include b(todayFocusEnterprise) {
+  height: 196px;
+  margin-top: 14px;
+  .app-box__body {
+    padding: 0 25px;
+  }
+  .table-head {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+    background: #4a8cff;
+    span {
+      flex: 1;
+      padding: 0 5px;
+    }
+    .span-2 {
+      flex: 2;
+    }
+  }
+  .tr {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+    &.odd {
+      background: rgba(74, 140, 255, 0.18);
+    }
+    .td {
+      flex: 1;
+      padding: 0 5px;
+      overflow: hidden;
+      @include single();
+    }
+    .td-2 {
+      flex: 2;
+    }
+  }
+}

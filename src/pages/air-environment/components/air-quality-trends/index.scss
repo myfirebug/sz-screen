@@ -1,0 +1,7 @@
+@include b(airQualityTrends) {
+  height: 280px;
+  margin-top: 14px;
+  .app-box__body {
+    height: calc(100% - 50px);
+  }
+}

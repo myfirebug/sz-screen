@@ -1,0 +1,45 @@
+@include b(waterExceedanceSection) {
+  height: 408px;
+  margin-top: 14px;
+  .app-box__body {
+    padding: 0 25px;
+  }
+  .total {
+    width: 311px;
+    height: 58px;
+    text-align: center;
+    line-height: 58px;
+    margin: 10px auto;
+    background: url("../../../../assets/images/exceedance-section.png")
+      no-repeat;
+    b {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  .table-head {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+    line-height: 1;
+    background: #4a8cff;
+    span {
+      flex: 1;
+      text-align: center;
+    }
+  }
+  .tr {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    line-height: 42px;
+    &.odd {
+      background: rgba(74, 140, 255, 0.18);
+    }
+    .td {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@include b(airQualityType) {
+  margin-top: 14px;
+  height: 340px;
+  .app-box__body {
+    padding: 0 18px 0 18px;
+  }
+  .tab {
+    display: flex;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(43, 65, 139, 0.72);
+    border-radius: 4px;
+    &-item {
+      flex: 1;
+      height: 100%;
+      transition: all 0.25s ease 0s;
+      &:hover,
+      &.active {
+        background: linear-gradient(180deg, #003da0 0%, #498bff 100%);
+        border-radius: 4px;
+      }
+    }
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    &-item {
+      width: 126px;
+      height: 66px;
+      text-align: center;
+      border-left: 4px solid #498bff;
+      background: linear-gradient(
+        270deg,
+        transparent 0%,
+        rgba(73, 139, 255, 0.5) 100%
+      );
+      &:nth-child(1) {
+        .value {
+          color: #ffb737;
+        }
+      }
+      &:nth-child(2) {
+        .value {
+          color: #4abbff;
+        }
+      }
+      &:nth-child(3) {
+        .value {
+          color: #4a8cff;
+        }
+      }
+      .value {
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .name {
+        color: #bacedd;
+      }
+    }
+  }
+}

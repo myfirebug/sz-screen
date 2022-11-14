@@ -1,0 +1,15 @@
+@include b(enterpriseTypeAccounted) {
+  height: 230px;
+  margin-top: 14px;
+  .list {
+    padding-top: 20px;
+    display: flex;
+  }
+  .item {
+    flex: 1;
+    text-align: center;
+    .title {
+      padding-top: 10px;
+    }
+  }
+}

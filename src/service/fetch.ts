@@ -170,7 +170,10 @@ axios.interceptors.response.use(
   },
   (error: any) => {
     const { config, message, response } = error;
-    const { status } = response;
+    let status;
+    if (response) {
+      status = response.status;
+    }
     if (config) {
       allowRequest(
         `${config.url}?${Qs.stringify(config.params)}&method=${config.method}`

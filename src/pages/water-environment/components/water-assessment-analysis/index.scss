@@ -1,0 +1,48 @@
+@include b(waterAssessmentAnalysis) {
+  height: 370px;
+  .one {
+    margin-left: 18px;
+    width: 60px;
+    height: 47px;
+  }
+  .two {
+    .value {
+      color: #ffb737;
+    }
+  }
+  .three {
+    .value {
+      color: #4abbff;
+    }
+  }
+  .four {
+    width: 100px;
+    .value {
+      color: #4a8cff;
+    }
+  }
+  .optimal,
+  .bad {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .value {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .name {
+      color: #bacedd;
+    }
+  }
+  .optimal {
+    .one {
+      background: url("../../../../assets/images/optimal-icon.png") no-repeat;
+    }
+  }
+  .bad {
+    margin-top: 10px;
+    .one {
+      background: url("../../../../assets/images/bad-icon.png") no-repeat;
+    }
+  }
+}

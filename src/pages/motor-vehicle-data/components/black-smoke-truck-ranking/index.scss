@@ -1,0 +1,38 @@
+@include b(blackSmokeTruckRanking) {
+  height: 196px;
+  margin-top: 14px;
+  .app-box__body {
+    padding: 0 25px;
+  }
+  .table-head {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: 20px;
+    line-height: 1;
+    background: #4a8cff;
+    span {
+      flex: 1;
+      padding-left: 10px;
+    }
+    .span-2 {
+      flex: 2;
+    }
+  }
+  .tr {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+    &.odd {
+      background: rgba(74, 140, 255, 0.18);
+    }
+    .td {
+      flex: 1;
+      padding-left: 10px;
+    }
+    .td-2 {
+      flex: 2;
+    }
+  }
+}

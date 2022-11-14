@@ -1,0 +1,23 @@
+@include b(motorVehicle) {
+  height: 414px;
+  .list {
+    display: flex;
+  }
+  .item {
+    flex: 1;
+    text-align: center;
+    .value {
+      font-size: 24px;
+      color: #4abbff;
+      font-weight: bold;
+    }
+    .name {
+      color: #bacedd;
+    }
+  }
+  .sub-title {
+    padding: 15px 18px;
+    font-weight: bold;
+    color: #4abbff;
+  }
+}

@@ -1,0 +1,26 @@
+@include b(waterComplianceRate) {
+  margin-top: 14px;
+  height: 242px;
+  .app-box__body {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 50px);
+  }
+  .echart {
+    flex: 1;
+  }
+  .list {
+    width: 184px;
+    padding: 0 36px;
+    text-align: center;
+  }
+  .item {
+    padding-bottom: 20px;
+    background: url("../../../../assets/images/compliance-rate-item.png") center
+      bottom no-repeat;
+    .value {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}

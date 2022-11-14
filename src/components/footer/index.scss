@@ -39,7 +39,7 @@ $list: 0, 1, 2, 3, 4;
     &:nth-child(3) {
       flex: 3;
     }
-    &.active,
+    &.is-active,
     &:hover {
       color: #ffb737;
       @each $author in $list {
