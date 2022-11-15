@@ -3,14 +3,21 @@
  * @Author: hejp 378540660@qq.com
  * @Date: 2022-11-06 17:09:13
  * @LastEditors: hejp 378540660@qq.com
- * @LastEditTime: 2022-11-06 20:16:51
+ * @LastEditTime: 2022-11-15 22:11:09
  * @FilePath: \sz-screen\src\components\scroll-list\index.tsx
  * Copyright (c) 2022 by hejp 378540660@qq.com, All Rights Reserved.
  */
-import { FC, useState, useRef, useCallback, useEffect } from "react";
+import {
+  FC,
+  useState,
+  useRef,
+  useCallback,
+  useEffect,
+  HtmlHTMLAttributes,
+} from "react";
 import "./index.scss";
 
-interface IScrollListProps {
+interface IScrollListProps extends HtmlHTMLAttributes<HTMLDivElement> {
   data: any[];
   rows?: number;
   render: (data: any) => any;
@@ -24,6 +31,7 @@ const ScrollList: FC<IScrollListProps> = ({
   render,
   rolling = false,
   lineHeight = 40,
+  className,
 }) => {
   // 是否动画
   const [animate, setAnimate] = useState(false);
@@ -68,7 +76,7 @@ const ScrollList: FC<IScrollListProps> = ({
 
   return (
     <div
-      className="app-scrollList"
+      className={`app-scrollList ${className ? className : ""}`}
       style={{
         height: lineHeight * rows,
       }}

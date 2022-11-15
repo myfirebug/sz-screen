@@ -3,7 +3,7 @@
  * @Author: hejp 378540660@qq.com
  * @Date: 2022-10-30 22:11:17
  * @LastEditors: hejp 378540660@qq.com
- * @LastEditTime: 2022-11-06 12:53:45
+ * @LastEditTime: 2022-11-15 21:49:00
  * @FilePath: \sz-screen\src\App.tsx
  * Copyright (c) 2022 by hejp 378540660@qq.com, All Rights Reserved.
  */
@@ -41,6 +41,14 @@ const App: FC<IAppProps> = () => {
       <Suspense fallback={<Loading />}>
         <Router>
           <Switch>
+            {/*应急指挥调度默认*/}
+            <Route
+              path="/default"
+              component={lazy(
+                () =>
+                  import(/*webpackChunkName:"home"*/ "@src/pages/default/index")
+              )}
+            />
             {/*应急指挥调度*/}
             <Route
               path="/home"

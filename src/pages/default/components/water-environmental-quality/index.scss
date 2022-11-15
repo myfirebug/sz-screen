@@ -1,0 +1,56 @@
+@include b(waterEnvironmentalQuality) {
+  height: 500px;
+  .top {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 50px);
+    .echarts {
+      flex: 1;
+    }
+    .list {
+      width: 184px;
+      padding: 0 36px;
+      text-align: center;
+    }
+    .item {
+      padding-bottom: 20px;
+      background: url("../../../../assets/images/compliance-rate-item.png")
+        center bottom no-repeat;
+      .value {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+  .sub-title {
+    padding: 10px 0;
+    font-weight: bold;
+    color: #4abbff;
+  }
+  @include e(scrollList) {
+    .item {
+      display: flex;
+      align-items: center;
+      padding: 0 18px;
+      .name {
+        width: 60px;
+        overflow: hidden;
+      }
+      .value {
+        width: 40px;
+        text-align: right;
+      }
+      .progress {
+        flex: 1;
+        height: 10px;
+        border-radius: 10px;
+        background: rgba(74, 187, 255, 0.1);
+      }
+      .bar {
+        height: 10px;
+        border-radius: 10px;
+        background: #4abbff;
+      }
+    }
+  }
+}
