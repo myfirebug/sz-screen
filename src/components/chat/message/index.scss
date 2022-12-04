@@ -1,0 +1,89 @@
+@include b(message) {
+  height: calc(100% - 210px);
+  overflow: hidden;
+  overflow-y: auto;
+  @include e(item) {
+    display: flex;
+    padding: 0 10px;
+    margin-top: 13px;
+    @include when(reverse) {
+      flex-direction: row-reverse;
+      .photo {
+        margin: 0 0 0 10px;
+      }
+      .message {
+        justify-content: flex-end;
+      }
+    }
+    .photo {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px 0 0;
+      border-radius: 50%;
+      background: url("../../../assets/images/photo.png") center center
+        no-repeat;
+      background-color: #4a8cff;
+    }
+    .message {
+      display: flex;
+      overflow: hidden;
+      flex: 1;
+      p {
+        max-width: 80%;
+        margin: 0;
+        padding: 8px;
+        background: #294892;
+        border-radius: 4px;
+      }
+    }
+  }
+  @include e(footer) {
+    border-top: 1px solid #1d2e67;
+    padding: 0 18px;
+    margin-top: 10px;
+    .buttons {
+      display: flex;
+      padding-top: 10px;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      width: 70px;
+      height: 28px;
+      margin-right: 12px;
+      text-align: center;
+      line-height: 26px;
+      background: rgba(4, 192, 255, 0.1);
+      border-radius: 4px;
+      border: 1px solid #4a8cff;
+      transition: all 0.25s ease 0s;
+      &:hover {
+        background: #4a8cff;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .video,
+    .audio,
+    .message,
+    .file {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+
+    .video {
+      background: url("../../../assets/images/video.png");
+    }
+    .audio {
+      background: url("../../../assets/images/audio.png");
+    }
+    .message {
+      background: url("../../../assets/images/message.png");
+    }
+    .file {
+      background: url("../../../assets/images/file.png");
+    }
+  }
+}

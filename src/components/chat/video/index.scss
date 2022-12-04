@@ -1,0 +1,79 @@
+// 视频
+@include b(video) {
+  height: calc(100% - 84px);
+  overflow: hidden;
+  overflow-y: auto;
+  .say {
+    padding: 0 5px;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    background: rgba(10, 10, 10, 0.8);
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    background: url("../../../assets/images/photo.png") center center no-repeat;
+    background-color: #4a8cff;
+  }
+  @include e(special) {
+    position: relative;
+    width: 194px;
+    height: 141px;
+    margin: 27px auto 0 auto;
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+  }
+  @include e(list) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 19px 6px 0 8px;
+  }
+  @include e(item) {
+    position: relative;
+    width: 146px;
+    height: 106px;
+    margin: 8px 8px 0 0;
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+  }
+  @include e(footer) {
+    margin: 12px 15px;
+    height: 60px;
+    padding: 12px;
+    background: #0b2151;
+    border-radius: 4px;
+    .btn-video,
+    .btn-voice {
+      width: 36px;
+      height: 36px;
+      margin-right: 10px;
+      border-radius: 50%;
+      border: none;
+      transition: all 0.25s ease 0s;
+      &:hover {
+        background-color: #4a8cff;
+      }
+    }
+    .ant-btn {
+      height: 36px;
+    }
+    .btn-video {
+      background: url("../../../assets/images//video.png") center center
+        no-repeat;
+      background-color: #294892;
+    }
+    .btn-voice {
+      background: url("../../../assets/images//say.png") center center no-repeat;
+      background-color: #294892;
+    }
+  }
+}

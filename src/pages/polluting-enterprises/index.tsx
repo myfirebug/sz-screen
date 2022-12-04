@@ -25,6 +25,8 @@ import ElectricityConsumptionAnalysis from "./components/electricity-consumption
 import RateOfPass from "./components/rate-of-pass";
 // 尾部
 import Footer from "@src/components/footer";
+// 地图
+import Gmap from "@src/components/gmap";
 
 interface IPollutingEnterprisesProps {
   location: any;
@@ -46,6 +48,7 @@ const PollutingEnterprises: FC<IPollutingEnterprisesProps> = (
           {/* 严重污染企业类型占比 */}
           <EnterpriseTypeAccounted />
         </SidebarLeft>
+        <Gmap />
         <SidebarRight>
           {/* 企业用电量分析 */}
           <ElectricityConsumptionAnalysis />

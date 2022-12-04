@@ -29,15 +29,33 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script type="text/javascript">
+      window._AMapSecurityConfig = {
+        securityJsCode: "8e85d0bee0eeed81752e66864e895962",
+      };
+    </script>
+    <script src="https://webapi.amap.com/loader.js"></script>
+    <script type="text/javascript">
+      AMapLoader.load({
+        key: "4ee894cac03074593ff774cd8e1ff43c", // 申请好的Web端开发者Key，首次调用 load 时必填
+        version: "2.0", // 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
+        plugins: ["AMap.MarkerClusterer"], // 需要使用的的插件列表，如比例尺'AMap.Scale'等
+        AMapUI: {
+          // 是否加载 AMapUI，缺省不加载
+          version: "1.1", // AMapUI 版本
+          plugins: ["overlay/SimpleMarker"], // 需要加载的 AMapUI ui插件
+        },
+        Loca: {
+          // 是否加载 Loca， 缺省不加载
+          version: "2.0", // Loca 版本
+        },
+      })
+        .then((AMap) => {
+          window.AMap = AMap;
+        })
+        .catch((e) => {
+          console.error(e, "map error"); //加载错误提示
+        });
+    </script>
   </body>
 </html>

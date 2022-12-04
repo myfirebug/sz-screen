@@ -3,7 +3,7 @@
  * @Author: hejp 378540660@qq.com
  * @Date: 2022-11-06 12:43:43
  * @LastEditors: hejp 378540660@qq.com
- * @LastEditTime: 2022-11-12 21:54:52
+ * @LastEditTime: 2022-12-03 19:07:19
  * @FilePath: \sz-screen\src\pages\motor-vehicle-data\index.tsx
  * Copyright (c) 2022 by hejp 378540660@qq.com, All Rights Reserved.
  */
@@ -24,6 +24,8 @@ import PollutionTypeAnalysis from "./components/pollution-type-analysis";
 import BlackSmokeTruckRanking from "./components/black-smoke-truck-ranking";
 // 尾部
 import Footer from "@src/components/footer";
+// 地图
+import Gmap from "@src/components/gmap";
 
 interface IMotorVehicleDataProps {
   location: any;
@@ -41,6 +43,7 @@ const MotorVehicleData: FC<IMotorVehicleDataProps> = ({ location }) => {
           {/* 汽油车尾气检测合格率 */}
           <PetrolEngineCar />
         </SidebarLeft>
+        <Gmap />
         <SidebarRight>
           {/* 各等级黑烟车数量及占比 */}
           <BlackSmokeTruck />

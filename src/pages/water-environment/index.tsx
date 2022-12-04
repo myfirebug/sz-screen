@@ -24,6 +24,8 @@ import WaterComplianceRate from "./components/water-compliance-rate";
 import WaterExceedanceSection from "./components/water-exceedance-section";
 // 尾部
 import Footer from "@src/components/footer";
+// 地图
+import Gmap from "@src/components/gmap";
 
 interface IWaterEnvironmentProps {
   location: any;
@@ -41,6 +43,7 @@ const WaterEnvironment: FC<IWaterEnvironmentProps> = ({ location }) => {
           {/* 水质主要污染物占比 */}
           <WaterProportionPollutants />
         </SidebarLeft>
+        <Gmap />
         <SidebarRight>
           {/* 当月地表水水质等级占比 */}
           <WaterLevel />

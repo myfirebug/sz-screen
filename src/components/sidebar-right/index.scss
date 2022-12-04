@@ -12,6 +12,15 @@
   animation-fill-mode: forwards;
   transform: translateX(100%);
   opacity: 0;
+  &:after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: -20px;
+    width: 21px;
+    height: 992px;
+    background: url("../../assets/images/sidebar-right-bg.png") no-repeat;
+  }
   @keyframes sidebar-right {
     from {
       opacity: 0;

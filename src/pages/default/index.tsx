@@ -3,7 +3,7 @@
  * @Author: hejp 378540660@qq.com
  * @Date: 2022-10-30 23:02:50
  * @LastEditors: hejp 378540660@qq.com
- * @LastEditTime: 2022-11-15 22:15:56
+ * @LastEditTime: 2022-12-03 18:43:16
  * @FilePath: \sz-screen\src\pages\default\index.tsx
  * Copyright (c) 2022 by hejp 378540660@qq.com, All Rights Reserved.
  */
@@ -23,6 +23,8 @@ import WaterEnvironmentalQuality from "./components/water-environmental-quality"
 import MotorVehicleData from "./components/motor-vehicle-data";
 // 尾部
 import Footer from "@src/components/footer";
+// 地图
+import Gmap from "@src/components/gmap";
 
 interface IHomeProps {
   location: any;
@@ -41,6 +43,8 @@ const Home: FC<IHomeProps> = (props: IHomeProps) => {
           {/* 重点污染企业 */}
           <KeyPolluters />
         </SidebarLeft>
+        {/* 地图 */}
+        <Gmap />
         <SidebarRight>
           {/* 水环境质量 */}
           <WaterEnvironmentalQuality />

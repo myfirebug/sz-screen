@@ -24,6 +24,8 @@ import AirQualityTrends from "./components/air-quality-trends";
 import AirQualityForecast from "./components/air-quality-forecast";
 // 尾部
 import Footer from "@src/components/footer";
+// 地图
+import Gmap from "@src/components/gmap";
 
 interface IAirEnvironmentProps {
   location: any;
@@ -41,6 +43,7 @@ const AirEnvironment: FC<IAirEnvironmentProps> = ({ location }) => {
           {/* 空气质量类型 */}
           <AirQualityType />
         </SidebarLeft>
+        <Gmap />
         <SidebarRight>
           {/* 全市各区空气质量排名 */}
           <AirQualityRanking />
