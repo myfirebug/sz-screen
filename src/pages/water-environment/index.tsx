@@ -3,7 +3,7 @@
  * @Author: hejp 378540660@qq.com
  * @Date: 2022-11-06 12:43:43
  * @LastEditors: hejp 378540660@qq.com
- * @LastEditTime: 2022-11-12 16:55:56
+ * @LastEditTime: 2022-12-05 20:03:02
  * @FilePath: \sz-screen\src\pages\water-environment\index.tsx
  * Copyright (c) 2022 by hejp 378540660@qq.com, All Rights Reserved.
  */
@@ -25,7 +25,7 @@ import WaterExceedanceSection from "./components/water-exceedance-section";
 // 尾部
 import Footer from "@src/components/footer";
 // 地图
-import Gmap from "@src/components/gmap";
+import WaterGmap from "./components/gmap";
 
 interface IWaterEnvironmentProps {
   location: any;
@@ -43,7 +43,7 @@ const WaterEnvironment: FC<IWaterEnvironmentProps> = ({ location }) => {
           {/* 水质主要污染物占比 */}
           <WaterProportionPollutants />
         </SidebarLeft>
-        <Gmap />
+        <WaterGmap />
         <SidebarRight>
           {/* 当月地表水水质等级占比 */}
           <WaterLevel />

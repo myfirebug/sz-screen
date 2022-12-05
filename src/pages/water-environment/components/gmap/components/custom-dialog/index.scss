@@ -1,0 +1,72 @@
+@include b(dialog) {
+  @include e(water) {
+    .app-dialog__body {
+      padding: 20px;
+    }
+    .info {
+      display: flex;
+      p {
+        margin: 0;
+      }
+      .picture {
+        width: 242px;
+        height: 149px;
+        margin-right: 26px;
+        background: #fff;
+      }
+      ul {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 15px;
+      }
+      li {
+        width: 33.33%;
+      }
+      .value {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .sub-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #4a8cff;
+    }
+    .app-button {
+      margin-left: 10px;
+    }
+  }
+
+  .table-head {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+    line-height: 1;
+    background: #4a8cff;
+    span {
+      flex: 1;
+      text-align: center;
+    }
+  }
+  .tr {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    line-height: 42px;
+    &.odd {
+      background: rgba(74, 140, 255, 0.18);
+    }
+    .td {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}

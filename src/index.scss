@@ -8,6 +8,38 @@ body {
   height: 100%;
 }
 
+.app-map__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 110px;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%);
+  width: 1028px;
+  height: 76px;
+  background: url("./assets/images/map-bg-title.png") no-repeat;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    &:first-child {
+      padding-right: 20px;
+    }
+  }
+  .name {
+    padding-right: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 42px;
+  }
+}
+
 /* 设置滚动条的样式 */
 
 ::-webkit-scrollbar {

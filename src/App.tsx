@@ -30,7 +30,7 @@ const App: FC<IAppProps> = () => {
       style={{
         width: 2560,
         height: 1080,
-        transform: `scale(${scale})`,
+        transform: `scale(${1})`,
         transformOrigin: "left top",
         color: "rgba(255, 255, 255, 1)",
         position: "relative",

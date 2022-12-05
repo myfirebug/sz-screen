@@ -25,14 +25,6 @@ import InformationReporting from "./components/information-reporting";
 import HomeGmap from "./components/gmap";
 // 尾部
 import Footer from "@src/components/footer";
-
-import "./index.scss";
-
-const mapIcon01 = require("../../assets/images/map-icon-01.png");
-const mapIcon02 = require("../../assets/images/map-icon-02.png");
-const mapIcon03 = require("../../assets/images/map-icon-03.png");
-
-console.log(mapIcon01, mapIcon02, mapIcon03);
 interface IHomeProps {
   location: any;
 }

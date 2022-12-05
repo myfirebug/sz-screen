@@ -4,6 +4,8 @@ import Gmap from "@src/components/gmap";
 // 聊天
 import Chat from "@src/components/chat";
 
+import "./index.scss";
+
 const mapIcon01 = require("../../../../assets/images/map-icon-01.png");
 const mapIcon02 = require("../../../../assets/images/map-icon-02.png");
 const mapIcon03 = require("../../../../assets/images/map-icon-03.png");
@@ -95,7 +97,7 @@ const HomeGmap: FC<IHomeGmapProps> = () => {
     let PixelY = 30;
     switch (item.type) {
       case 1:
-        info = `<div class="app-map-infowindow is-1">
+        info = `<div class="app-map-infowindow is-home is-1">
           <dl class="body">
             <dt><img /></dt>
             <dd><span class="name">姓名</span><span class="value">李华</span></dd>
@@ -114,7 +116,7 @@ const HomeGmap: FC<IHomeGmapProps> = () => {
       case 3:
         break;
       case 4:
-        info = `<div class="app-map-infowindow is-4">
+        info = `<div class="app-map-infowindow is-home is-4">
           <div class="header">朔城区滨河湾小区</div>
           <div class="body">空气污染严重，PM2.5数值达到234空气污染严重，PM2.5数值达到234</div>
         </div>`;

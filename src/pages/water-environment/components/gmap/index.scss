@@ -1,0 +1,42 @@
+@include b(map-infowindow) {
+  @include when(water) {
+    width: 249px;
+    height: 176px;
+    padding: 24px 24px 24px 20px;
+    box-sizing: border-box;
+    background: url("../../../../assets/images/map-water-bg01.png") no-repeat;
+    .header {
+      width: 212px;
+      height: 56px;
+      margin: 0 auto;
+      line-height: 56px;
+      text-align: center;
+      font-weight: bold;
+      font-weight: bold;
+      background: url("../../../../assets//images/map-water-title-bg01.png")
+        no-repeat;
+    }
+    .body {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 10px;
+      span {
+        width: 50%;
+      }
+    }
+    .footer {
+      width: 84px;
+      height: 24px;
+      margin: 8px auto 0 auto;
+      text-align: center;
+      background: linear-gradient(180deg, #003da0 0%, #498bff 100%);
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 4px;
+      transition: all 0.25s ease 0s;
+      cursor: pointer;
+      &:hover {
+        background: linear-gradient(180deg, #498bff 0%, #003da0 100%);
+      }
+    }
+  }
+}

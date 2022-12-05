@@ -1,5 +1,5 @@
 @include b(box) {
-  background: rgba(47, 68, 164, 0.31);
+  background: rgba(47, 68, 164, 0.4);
   @include e(header) {
     display: flex;
     align-items: center;
