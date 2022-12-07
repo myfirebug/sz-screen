@@ -3,7 +3,7 @@
  * @Author: hejp 378540660@qq.com
  * @Date: 2022-11-06 12:43:43
  * @LastEditors: hejp 378540660@qq.com
- * @LastEditTime: 2022-11-12 16:48:29
+ * @LastEditTime: 2022-12-07 20:54:28
  * @FilePath: \sz-screen\src\pages\air-environment\index.tsx
  * Copyright (c) 2022 by hejp 378540660@qq.com, All Rights Reserved.
  */
@@ -25,7 +25,7 @@ import AirQualityForecast from "./components/air-quality-forecast";
 // 尾部
 import Footer from "@src/components/footer";
 // 地图
-import Gmap from "@src/components/gmap";
+import AirGmap from "./components/gmap";
 
 interface IAirEnvironmentProps {
   location: any;
@@ -43,7 +43,7 @@ const AirEnvironment: FC<IAirEnvironmentProps> = ({ location }) => {
           {/* 空气质量类型 */}
           <AirQualityType />
         </SidebarLeft>
-        <Gmap />
+        <AirGmap />
         <SidebarRight>
           {/* 全市各区空气质量排名 */}
           <AirQualityRanking />

@@ -1,0 +1,112 @@
+@include b(dialog) {
+  @include e(air) {
+    .app-dialog__body {
+      padding: 20px;
+    }
+    .row {
+      display: flex;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 15px;
+      p {
+        margin: 0;
+      }
+      .value {
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    .sub-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #4a8cff;
+    }
+    .app-button {
+      margin-left: 10px;
+    }
+  }
+  .sub-body {
+    display: flex;
+    justify-content: space-between;
+    .video {
+      width: 720px;
+      height: 420px;
+      background: #fff;
+    }
+  }
+  .single {
+    background: url("../../../../../../assets/images/single-icon.png") center
+      center no-repeat;
+    &.active,
+    &:hover {
+      background: url("../../../../../../assets/images/single-icon-hover.png")
+        center center no-repeat;
+    }
+    &-list {
+      width: 220px;
+      height: 420px;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 30px;
+      overflow: hidden;
+      overflow-y: auto;
+      background: #0b2151;
+    }
+    &-item {
+      .title {
+        cursor: pointer;
+        transition: all 0.25s ease 0s;
+        &:hover {
+          opacity: 0.8;
+        }
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border: 5px solid transparent;
+          border-left-color: #fff;
+          border-radius: 2px;
+        }
+        &.active {
+          color: #04c0ff;
+          &::before {
+            border-left-color: #04c0ff;
+          }
+        }
+      }
+      dl {
+        padding-left: 10px;
+      }
+      dd {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:hover {
+          transition: all 0.25s ease 0s;
+          color: #04c0ff;
+          &:hover .icon {
+            opacity: 1;
+          }
+        }
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        background: url("../../../../../../assets/images/monitoring-icon.png")
+          center center no-repeat;
+        opacity: 0.8;
+        transition: all 0.25s ease 0s;
+      }
+    }
+  }
+}

@@ -3,15 +3,31 @@
     display: flex !important;
     flex-wrap: wrap;
     @include m(item) {
-      height: 42px;
+      position: relative;
+      height: 40px;
       width: 34px;
-      line-height: 42px;
+      line-height: 40px;
       margin-right: 10px;
-      background: #4a8cff;
       border-radius: 4px;
       overflow: hidden;
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 19px;
+        background: rgba(74, 140, 255, 0.44);
+      }
+      &:before {
+        top: 0;
+      }
+      &:after {
+        bottom: 0;
+      }
       div {
         position: relative;
+        z-index: 1;
         width: 100%;
         height: 1000%;
         transform: translateY(0);

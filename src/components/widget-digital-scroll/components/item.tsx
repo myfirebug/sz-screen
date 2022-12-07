@@ -9,7 +9,7 @@ const DigitalScrollItem: FC<IDigitalScrollItemProps> = ({ value }) => {
   useEffect(() => {
     let timmer = setTimeout(() => {
       setItemStyle({
-        transform: `translateY(-${value * 42}px)`,
+        transform: `translateY(-${value * 40}px)`,
       });
     }, 0);
     return () => {

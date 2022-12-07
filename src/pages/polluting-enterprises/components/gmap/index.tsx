@@ -8,9 +8,7 @@ import DigitalScroll from "@src/components/widget-digital-scroll";
 
 import "./index.scss";
 
-const mapIcon01 = require("../../../../assets/images/map-water-icon-01.png");
-const mapIcon02 = require("../../../../assets/images/map-water-icon-02.png");
-const mapIcon03 = require("../../../../assets/images/map-water-icon-03.png");
+const mapIcon01 = require("../../../../assets/images/map-polluting-icon-01.png");
 
 interface IHomeGmapProps {}
 
@@ -34,14 +32,14 @@ const HomeGmap: FC<IHomeGmapProps> = () => {
         name: "朔城区滨河湾小区",
         latitude: 39.531734,
         longitude: 113.432906,
-        type: 2,
+        type: 1,
         id: 2,
       },
       {
         name: "朔城区滨河湾小区",
         latitude: 39.731774,
         longitude: 111.432906,
-        type: 3,
+        type: 1,
         id: 3,
       },
     ];
@@ -51,11 +49,6 @@ const HomeGmap: FC<IHomeGmapProps> = () => {
         case 1:
           content = `<img src="${mapIcon01}" />`;
           break;
-        case 2:
-          content = `<img src="${mapIcon02}" />`;
-          break;
-        case 3:
-          content = `<img src="${mapIcon03}" />`;
           break;
         default:
       }
@@ -85,7 +78,7 @@ const HomeGmap: FC<IHomeGmapProps> = () => {
       <span>${item.latitude}</span>
       <span>${item.longitude}</span>
     </div>
-    <div class="footer" data-map="water">点位分析</div>
+    <div class="footer" data-map="water">查看详情</div>
   </div>`;
     let PixelX = 190;
     let PixelY = 30;
@@ -122,11 +115,11 @@ const HomeGmap: FC<IHomeGmapProps> = () => {
       <div className="app-map__title">
         <ul>
           <li>
-            <span className="name">水质检测站总数</span>
+            <span className="name">国控点位总数</span>
             <DigitalScroll value="54656" />
           </li>
           <li>
-            <span className="name">超标断面总数</span>
+            <span className="name">微站点位总数</span>
             <DigitalScroll value="9674" />
           </li>
         </ul>

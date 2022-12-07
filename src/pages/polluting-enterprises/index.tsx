@@ -3,7 +3,7 @@
  * @Author: hejp 378540660@qq.com
  * @Date: 2022-11-06 12:43:43
  * @LastEditors: hejp 378540660@qq.com
- * @LastEditTime: 2022-11-12 18:29:02
+ * @LastEditTime: 2022-12-07 21:39:26
  * @FilePath: \sz-screen\src\pages\polluting-enterprises\index.tsx
  * Copyright (c) 2022 by hejp 378540660@qq.com, All Rights Reserved.
  */
@@ -26,7 +26,7 @@ import RateOfPass from "./components/rate-of-pass";
 // 尾部
 import Footer from "@src/components/footer";
 // 地图
-import Gmap from "@src/components/gmap";
+import PollutingGmap from "./components/gmap";
 
 interface IPollutingEnterprisesProps {
   location: any;
@@ -48,7 +48,7 @@ const PollutingEnterprises: FC<IPollutingEnterprisesProps> = (
           {/* 严重污染企业类型占比 */}
           <EnterpriseTypeAccounted />
         </SidebarLeft>
-        <Gmap />
+        <PollutingGmap />
         <SidebarRight>
           {/* 企业用电量分析 */}
           <ElectricityConsumptionAnalysis />
