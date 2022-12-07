@@ -3,7 +3,7 @@
  * @Author: hejp 378540660@qq.com
  * @Date: 2022-11-01 18:57:29
  * @LastEditors: hejp 378540660@qq.com
- * @LastEditTime: 2022-12-04 00:35:22
+ * @LastEditTime: 2022-12-07 22:28:12
  * @FilePath: \sz-screen\src\components\gmap\index.tsx
  * Copyright (c) 2022 by hejp 378540660@qq.com, All Rights Reserved.
  */
@@ -66,7 +66,7 @@ const Map: FC<IMapProps> = ({ init, children }) => {
                 polygons.push(polygon);
               }
               // 地图自适应
-              amap.setFitView();
+              // amap.setFitView();
             }
           }
         );

@@ -67,6 +67,7 @@ const HomeGmap: FC<IHomeGmapProps> = () => {
       markers.push(marker);
     });
     emap.add(markers);
+    emap.setFitView();
   }, []);
   // 类型弹窗
   const openInfoWindow = useCallback((item: any, emap: any) => {
